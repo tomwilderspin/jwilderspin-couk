@@ -75,6 +75,9 @@ gulp.task('copy',['minify-js'], function() {
 
     gulp.src('index.html').pipe(gulp.dest('build'));
 
+    gulp.src(['js/contact_me.js', 'js/jqBootstrapValidation.js'])
+      .pipe(gulp.dest('build/js'));
+
     gulp.src('img/**').pipe(gulp.dest('build/img'));
 })
 
