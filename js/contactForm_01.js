@@ -23,8 +23,9 @@ $(function() {
             $.ajax({
                 url: "https://data.joannewilderspin.co.uk/dev/contact",
                 type: "POST",
-                dataType: "jsonp",
+                dataType: "json",
                 contentType: 'application/json; charset=UTF-8',
+                crossDomain: true,
                 data: {
                     name: name,
                     phone: phone,
