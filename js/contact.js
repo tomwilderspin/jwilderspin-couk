@@ -23,7 +23,8 @@ $(function() {
             $.ajax({
                 url: "https://data.joannewilderspin.co.uk/dev/contact",
                 type: "POST",
-                dataType: "text",
+                dataType: "jsonp",
+                contentType: 'application/json; charset=UTF-8',
                 data: {
                     name: name,
                     phone: phone,
@@ -31,7 +32,7 @@ $(function() {
                     message: message
                 },
                 cache: false,
-                success: function() {
+                success: function(resultData) {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
