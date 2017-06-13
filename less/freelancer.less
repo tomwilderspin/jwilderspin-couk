@@ -2,7 +2,7 @@
 @import "mixins.less";
 
 body {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Playfair Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
 }
 
@@ -23,7 +23,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -32,7 +32,7 @@ hr.star-light,
 hr.star-primary {
     padding: 0;
     border: none;
-    border-top: solid 5px;
+    border-top: solid 2px;
     text-align: center;
     max-width: 250px;
     margin: 25px auto 30px;
@@ -40,7 +40,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    //content: "\f005";
     font-family: FontAwesome;
     display: inline-block;
     position: relative;
@@ -86,7 +86,7 @@ header {
 	.intro-text {
 		.name {
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: 2em;
@@ -101,8 +101,8 @@ header {
 @media(min-width:768px) {
 	header {
 		.container {
-			padding-top: 200px;
-			padding-bottom: 100px;
+			padding-top: 250px;
+			padding-bottom: 200px;
 		}
 		.intro-text {
 			.name {
@@ -117,8 +117,8 @@ header {
 
 .navbar-custom {
 	background: @theme-primary;
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
+	font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: lowercase;
 	font-weight: 700;
 	border: none;
 	.navbar-brand {
